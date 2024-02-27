@@ -40,7 +40,7 @@ img{
 #right{
     position: absolute;
     top: 218px; left: 1100px;
-    width: 2500px;
+    width: 2000px;
     height: 1200px;
     background-color: var(--intenseGreen);
     /* display: flex; */
@@ -144,11 +144,27 @@ img{
 
 }
 
+.signUp > .contentForm > form > .form > input {
+    display: flex;
+    justify-content: space-between;  
+    align-self: center;
+   
+    /* margin-bottom: 30px; */
+    border: 2px solid red;
+    width: 30%;
+    height: 70%;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
 .signUp > .contentForm > form > p{
     color: var(--green);
     border: 2px solid magenta;
 
 }
+
+
 
  /*slidebar begin-----------------------------------------------*/
 
