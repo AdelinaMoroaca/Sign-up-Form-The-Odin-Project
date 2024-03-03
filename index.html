@@ -10,7 +10,7 @@
     <div id="container">
         <div id="left">
             <div class="left img">
-                <img src="./photo/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+                <img src="./photo/coffe expressor.avif" alt="">
 
             </div>
             <div class="left logo">
@@ -38,31 +38,38 @@
                     <p>Don't have an account?</p>
                     <p>Sign Up</p>
     
-                    <form action="">
-                        <div class="form userName">
-                            <input type="fname" id="fname" name="fname" placeholder="Your First Name">
-                            <input type="lname" id="lname" name="lname" placeholder="Your Last Name">
-                        </div>
-                        
-                        <div class="form userContact">
-                            <input type="email" id="email" name="email" placeholder="Your Email">
-                            <input type="phone" id="phone" name="phone" placeholder="Your Phone Number">
-
-                        </div>
-
-                        <div class="form userPassword">
-                            <input type="password" id="password" name="password" placeholder="Your Password">
-                            <input type="password" id="password" name="password" placeholder="Confirm Your Password">
-                        </div>
-                        
-                        <input type="submit" value="Create Account">
+                    <form action="my-handling-form-page.com/path" method="post">
+                        <fieldset class="form">
+                            <legend>Contact Details</legend>
+                            <fieldset class="form-container">
+                                <fieldset class="formContainer userName">
+                                    <!-- <label for="fname">First Name:</label> -->
+                                    <input type="text" id="fname" name="fname" placeholder="Your First Name">
+                                    <input type="text" id="lname" name="lname" placeholder="Your Last Name">
+                                </fieldset>
+                                
+                                <fieldset class="formContainer userContact">
+                                    <!-- <label for="user_email">Email Address:</label> -->
+                                    <input type="email" id="user_email" name="email" placeholder="Your Email">
+                                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+                                </fieldset>
+        
+                                <fieldset class="formContainer userPassword">
+                                    <input type="password" id="password" name="password" placeholder="Your Password">
+                                    <input type="password" id="password" name="password" placeholder="Confirm Your Password">
+                                </fieldset>
+                            </fieldset>
+             
+                        </fieldset>
+                       
+                        <button type="submit" class="userData" value="Create Account"></button>
                         <p>Already have am account? <span>Log in</span></p>
                         
                     </form>
                 </div>
             
               
-        
+                <h1 class="greeting"></h1>
             </div>
 
             <!-- <div id="logIn">
@@ -80,5 +87,6 @@
             </div> -->
         </div>   
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

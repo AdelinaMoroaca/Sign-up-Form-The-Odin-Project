@@ -5,13 +5,16 @@
 }
 
 :root{
-    --green:rgb(0, 255, 179);
-    --intenseGreen:rgb(16, 119, 88);
+    --yellow:rgba(255, 227, 71, 0.911);
+    --intenseYellow:rgba(236, 228, 167, 0.884);
+    --black:rgb(0, 0, 0);
+    --intenseGray:rgba(49, 49, 49, 0.863);
+    --orange:rgba(255, 81, 0, 0.959);
 
 }
 
 body{
-    background-color: var(--green);
+    background-color: var(--intenseYellow);
 	height: max(800px, 820px);
 	width: max(1000px, 1900px);
 }
@@ -20,12 +23,13 @@ body{
     position: relative;
 	height: max(800px, 820px);
 	width: max(1000px, 1020px);
+    
 }
 
 #left {
 	height: max(800px, 820px);
 	width: max(600px, 660px);
-    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-image: url('coffe expressor.avif');
 }
 
 #left > .left {
@@ -36,15 +40,23 @@ img{
 	height: max(800px, 820px);
 	width: max(600px, 660px);
     position: absolute;
+    filter: contrast(150%);
 }
 
 #right{
+
     position: absolute;
-    top: 90px;
-    left: 470px;
+    top: 120px;
+    left: 590px;
     width: max(900px, 1000px);
-    height: max(600px, 600px);
+    height: max(550px, 600px);
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-self: center; */
+    border: 2px solid var(--black);
+    border-radius: 30px;
+    background-color: var(--intenseGray);
 }
 
 .logo, .logo > p{
@@ -53,11 +65,11 @@ img{
 }
 
 .logo{
-    background-color: var(--green);
-    opacity: 0.7;
+    background-color: var(--yellow);
+    opacity: 0.4;
     position: absolute;
-    top: 180px;
-    height: max(230px, 240px);
+    top: 420px;
+    height: max(100px, 160px);
 }
 
 .logo > p{
@@ -65,19 +77,23 @@ img{
     justify-content: center;
     align-items: center;
     align-self: center;
-    border: 2px solid red;
-    height: max(150px, 150px);
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    height: max(90px, 120px);
     font-size: 3rem;
+    color: black;
 }
 
 .signUp{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     align-self: center;
-    width: max(900px, 1000px);
-    height: max(600px, 600px);
-
+    width: max(900px, 1200px);
+    height: max(500px, 620px);
+    padding: 5px;
+    /* border: 1px solid aqua; */
 }
 
 .signUp > .slideBarContent{
@@ -87,7 +103,9 @@ img{
     align-self: center;
     align-items: center;
     width: max(900px, 1000px);
-    height: max(80px, 100px);
+    height: max(70px, 70px);
+    /* border: 1px solid magenta; */
+    /* background-color: magenta; */
 }
 
 .signUp > .slideBarContent > .slideBarDirection{
@@ -95,28 +113,41 @@ img{
     justify-content: space-between;
     align-self: center;
     align-items: center;
-    border: 2px solid yellow;
-    height: max(40px, 60px);
+    border: 2px solid var(--orange);
+    height: max(40px, 70px);
     width: max(350px, 370px);
-    background-color: red;
-}
-
-.signUp > .contentForm > p{
-    color: var(--green);
-    font-size: 1.5rem;
+    background-color: var(--black);
+    color: var(--yellow);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .signUp > .contentForm{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    border: 2px solid yellow;
-    background-color: black;
-    height: max(880px, 900px);
-    width: max(900px, 1000px);
+    justify-content: flex-end;
+    /* align-self: center; */
+    /* align-items: center; */
+    border: 2px solid var(--orange);
+    background-color: var(--black);
+    height: max(400px, 510px);
+    width: max(970px, 980px);
+
+    border-radius: 30px;
+    padding: 10px;
+ 
 }
+
+.signUp > .contentForm > p{
+    color: var(--yellow);
+    font-size: 1.7rem;
+    display: flex;
+    align-self: flex-start;
+    padding-left: 60px;
+    font-style: italic;
+}
+
+
 
 .signUp > .contentForm > form {
     display: flex;
@@ -124,50 +155,81 @@ img{
     justify-content: center;
     align-self: center;
     align-items: center;
-    border: 2px solid red;
-    background-color: yellowgreen;
-    height: max(300px, 400px);
+    border: 1px solid var(--orange);
+    background-color: var(--intenseGray);
+    height: max(300px, 450px);
     width: max(950px, 950px);
+    border-radius: 30px;
 }
 
 .signUp > .contentForm > form > .form {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    border: 2px solid red;
-    height: max(80px, 100px);
-    width: max(950px, 950px);
+    display: flex;  
+    justify-content: center;
+    /* align-items: center; */
+    /* align-self: center; */
+    background-color: aqua;
+    margin-bottom: 20px;
+    border: 1px solid var(--orange);
+    height: max(80px, 330px);
+    width: max(800px, 930px);
+    color: aliceblue;
+    border-radius: 30px;
 }
 
-.signUp > .contentForm > form > .form > input {
+.signUp > .contentForm > form > .form > legend {
+    /* padding-left: 40px; */
+    position: absolute;
+    padding: 5px;
+    left: 80px;
+    top: 160px;
+    background-color: var(--intenseGray);
+}
+
+.signUp > .contentForm > form > .form > .form-container {
     display: flex;
-    justify-content: space-between;  
-    align-self: center;
-   
-    /* margin-bottom: 30px; */
-    border: 2px solid red;
-    /* width: 30%;
-    height: 70%; */
-    height: max(70px, 70px);
-    width: max(350px, 400px);
+    flex-direction: column;
+    background-color: magenta;
+    padding: 3px;
+    margin: 5px;
+    height: max(100px, 320px);
+    width: max(800px, 940px); 
+}
+
+.signUp > .contentForm > form > .form > fieldset > fieldset {
+    /* display: flex;
+    justify-content: center; */
+    /* justify-content: space;
+    /* align-items: center;   */
+    /* align-self: center; 
+    border: 2px solid var(--orange);
+
+    height: max(40px, 40px);
+    width: max(10px, 40px);
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 25px; */
 }
 
-.signUp > .contentForm > form > p{
-    color: var(--green);
+/* .signUp > .contentForm > form > p{
+    color: var(--black);
     border: 2px solid magenta;
-}
+} */
+
+/* .userData{
+    width: max(190px, 200px);
+    height: max(20px, 30px);
+} */
 
 /* calc(), min(), max(), and clamp()  */
 
 /*slidebar begin-----------------------------------------------*/
 
 .switch {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    width: 380px;
-    height: 20px;
+    width: 330px;
+    height: 8px;
+    left: 335px;
+    top: 73px;
 }
 
 .switch input { 
@@ -183,34 +245,35 @@ img{
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
   
 .slider:before {
     position: absolute;
     content:'';
-    height: 50px;
-    width: 50px;
-    left: 360px;
-    bottom: -20px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    height: 30px;
+    width: 30px;
+    left: 310px;
+    bottom: -11px;
+    background-color: var(--orange);
+    -webkit-transition: .3s;
+    transition: .3s;
 }
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--yellow);
 }
+
   
 input:focus + .slider {
-    box-shadow: 0 0 10px lime;
+    box-shadow: 0 0 10px var(--orange);
 }
   
 input:checked + .slider:before {
     -webkit-transform: translateX(-380px);
-    -ms-transform: translateX(-400px);
-    transform: translateX(-380px);
+    -ms-transform: translateX(-380px);
+    transform: translateX(-320px);
 }
   
   /* Rounded sliders */
