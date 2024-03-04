@@ -44,7 +44,6 @@ img{
 }
 
 #right{
-
     position: absolute;
     top: 120px;
     left: 590px;
@@ -52,8 +51,6 @@ img{
     height: max(550px, 600px);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* align-self: center; */
     border: 2px solid var(--black);
     border-radius: 30px;
     background-color: var(--intenseGray);
@@ -81,7 +78,7 @@ img{
     border-bottom: 2px solid var(--black);
     height: max(90px, 120px);
     font-size: 3rem;
-    color: black;
+    /* color: var(--black); */
 }
 
 .signUp{
@@ -93,7 +90,6 @@ img{
     width: max(900px, 1200px);
     height: max(500px, 620px);
     padding: 5px;
-    /* border: 1px solid aqua; */
 }
 
 .signUp > .slideBarContent{
@@ -104,8 +100,6 @@ img{
     align-items: center;
     width: max(900px, 1000px);
     height: max(70px, 70px);
-    /* border: 1px solid magenta; */
-    /* background-color: magenta; */
 }
 
 .signUp > .slideBarContent > .slideBarDirection{
@@ -126,8 +120,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* align-self: center; */
-    /* align-items: center; */
     border: 2px solid var(--orange);
     background-color: var(--black);
     height: max(400px, 510px);
@@ -139,14 +131,21 @@ img{
 }
 
 .signUp > .contentForm > p{
+    margin-top: 15px;
     color: var(--yellow);
     font-size: 1.7rem;
     display: flex;
-    align-self: flex-start;
+    justify-content: flex-start;
+    align-self: baseline;
     padding-left: 60px;
     font-style: italic;
 }
 
+.signUp > .contentForm > p > span{
+    color: var(--orange);
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
 
 
 .signUp > .contentForm > form {
@@ -155,71 +154,103 @@ img{
     justify-content: center;
     align-self: center;
     align-items: center;
-    border: 1px solid var(--orange);
-    background-color: var(--intenseGray);
+    background-color: var(--black);
     height: max(300px, 450px);
-    width: max(950px, 950px);
+    width: max(800px, 960px);
     border-radius: 30px;
 }
 
 .signUp > .contentForm > form > .form {
     display: flex;  
     justify-content: center;
-    /* align-items: center; */
-    /* align-self: center; */
-    background-color: aqua;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 1px solid var(--orange);
-    height: max(80px, 330px);
-    width: max(800px, 930px);
-    color: aliceblue;
+    height: max(80px, 300px);
+    width: max(600px, 500px);
+    color: var(--orange);
     border-radius: 30px;
 }
 
 .signUp > .contentForm > form > .form > legend {
-    /* padding-left: 40px; */
     position: absolute;
-    padding: 5px;
-    left: 80px;
-    top: 160px;
-    background-color: var(--intenseGray);
+    padding-left: 5px;
+    padding-right: 5px;
+    left: 130px;
+    top: 152px;
+    background-color: var(--black);
+    font-size: 0.9rem;
 }
 
 .signUp > .contentForm > form > .form > .form-container {
     display: flex;
     flex-direction: column;
-    background-color: magenta;
+    justify-content: center;
     padding: 3px;
     margin: 5px;
     height: max(100px, 320px);
-    width: max(800px, 940px); 
+    width: max(800px, 850px); 
 }
 
-.signUp > .contentForm > form > .form > fieldset > fieldset {
-    /* display: flex;
-    justify-content: center; */
-    /* justify-content: space;
-    /* align-items: center;   */
-    /* align-self: center; 
-    border: 2px solid var(--orange);
-
-    height: max(40px, 40px);
-    width: max(10px, 40px);
+.signUp > .contentForm > form > .form > .form-container > .formContainer{
+    display: flex;
+    justify-content: space-around;
+    height: max(40px, 80px);
+    width: max(10px, 850px);
     padding: 15px;
-    border-radius: 25px; */
+    /* border-radius: 25px; */
+    /* background-color: magenta; */
 }
 
-/* .signUp > .contentForm > form > p{
+.signUp > .contentForm > form > .form > .form-container > .formContainer > input{
+    height: max(40px, 50px);
+    width:  max(10px, 360px);
+    border-radius: 25px;
+    border: 1px solid var(--orange);
+    background-color: var(--intenseGray);
+}
+
+.signUp > .contentForm > form > .form > .form-container > .formContainer > input:hover{
+    border: 2px solid var(--yellow);
+}
+
+fieldset {
+    border: transparent;
+}
+
+form > .buttom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: max(800px, 920px); 
+    height: max(20px, 60px);
+}
+
+form > .buttom > button{
+    background-color: var(--yellow);
     color: var(--black);
-    border: 2px solid magenta;
-} */
+    border-radius: 20px;
+    border: 2px solid var(--orange);
+    width: max(40px, 280px);
+    height: max(20px, 50px);
+    margin-bottom: 2px;  
+}
 
-/* .userData{
-    width: max(190px, 200px);
-    height: max(20px, 30px);
-} */
+form > .buttom > p{
+    display: flex;
+    justify-content: center;
+    width: max(40px, 280px);
+    height: max(10px, 15px);
+    font-size: 0.8rem;
+    color: var(--orange);
+}
 
-/* calc(), min(), max(), and clamp()  */
+form > .buttom > p > span{
+    font-size: 0.8rem;
+    color: var(--intenseYellow);
+    padding-left: 5px;
+}
 
 /*slidebar begin-----------------------------------------------*/
 

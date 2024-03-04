@@ -35,21 +35,19 @@
                 </div>
 
                 <div class="contentForm">
-                    <p>Don't have an account?</p>
-                    <p>Sign Up</p>
+                    <p class="firstP">Don't have an account? <span>Sign Up</span></p>
+                    <!-- <p class="secondP">Sign Up</p> -->
     
                     <form action="my-handling-form-page.com/path" method="post">
                         <fieldset class="form">
                             <legend>Contact Details</legend>
                             <fieldset class="form-container">
                                 <fieldset class="formContainer userName">
-                                    <!-- <label for="fname">First Name:</label> -->
                                     <input type="text" id="fname" name="fname" placeholder="Your First Name">
                                     <input type="text" id="lname" name="lname" placeholder="Your Last Name">
                                 </fieldset>
                                 
                                 <fieldset class="formContainer userContact">
-                                    <!-- <label for="user_email">Email Address:</label> -->
                                     <input type="email" id="user_email" name="email" placeholder="Your Email">
                                     <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
                                 </fieldset>
@@ -62,8 +60,12 @@
              
                         </fieldset>
                        
-                        <button type="submit" class="userData" value="Create Account"></button>
-                        <p>Already have am account? <span>Log in</span></p>
+                        <fieldset class="buttom">
+                            <button type="submit" class="userData" value="Create Account">CREATE ACCOUNT</button>
+                            <p>Already have am account? <span>Log in</span></p>
+                        
+
+                        </fieldset>
                         
                     </form>
                 </div>
