@@ -13,9 +13,13 @@
                 <img src="./photo/coffe expressor.avif" alt="">
 
             </div>
+            
             <div class="left logo">
-                <p>Lorem, ipsum.</p>
+                <p class="text-logo">Lorem, ipsum.</p>
             </div>
+            <!-- <div class="text-logo">
+                <p class="text-logo">Lorem, ipsum.</p>
+            </div> -->
         </div>
         <div id="right">
             <div class="signUp">
@@ -43,18 +47,18 @@
                             <legend>Contact Details</legend>
                             <fieldset class="form-container">
                                 <fieldset class="formContainer userName">
-                                    <input type="text" id="fname" name="fname" placeholder="Your First Name">
-                                    <input type="text" id="lname" name="lname" placeholder="Your Last Name">
+                                    <input type="text" id="fname" name="fname" placeholder="Your First Name"  minlength="3" maxlength="15" required>
+                                    <input type="text" id="lname" name="lname" placeholder="Your Last Name" minlength="3" maxlength="15" required>
                                 </fieldset>
                                 
                                 <fieldset class="formContainer userContact">
-                                    <input type="email" id="user_email" name="email" placeholder="Your Email">
-                                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+                                    <input type="email" id="user_email" name="email" placeholder="Your Email" required>
+                                    <input type="number" id="phone" name="phone" placeholder="Your Phone Number" min="10" max="10" required>
                                 </fieldset>
         
                                 <fieldset class="formContainer userPassword">
-                                    <input type="password" id="password" name="password" placeholder="Your Password">
-                                    <input type="password" id="password" name="password" placeholder="Confirm Your Password">
+                                    <input type="password" id="password" name="password" placeholder="Your Password" required>
+                                    <input type="password" id="password" name="password" placeholder="Confirm Your Password" required>
                                 </fieldset>
                             </fieldset>
              

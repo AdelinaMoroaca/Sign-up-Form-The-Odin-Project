@@ -6,6 +6,8 @@
 
 :root{
     --yellow:rgba(255, 227, 71, 0.911);
+    --yellowOpacity:rgba(255, 227, 71, .4);
+
     --intenseYellow:rgba(236, 228, 167, 0.884);
     --black:rgb(0, 0, 0);
     --intenseGray:rgba(49, 49, 49, 0.863);
@@ -62,24 +64,27 @@ img{
 }
 
 .logo{
-    background-color: var(--yellow);
-    opacity: 0.4;
-    position: absolute;
+    background-color: var(--yellowOpacity);
+    /* opacity: 0.4; */
+    position: relative;
     top: 420px;
     height: max(100px, 160px);
+    
 }
 
 .logo > p{
-    display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    align-self: center;
+    align-self: center; 
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     height: max(90px, 120px);
     font-size: 3rem;
-    /* color: var(--black); */
+    color: var(--black);
+    top: 20px;
 }
+
+
 
 .signUp{
     display: flex;
@@ -211,6 +216,18 @@ img{
 
 .signUp > .contentForm > form > .form > .form-container > .formContainer > input:hover{
     border: 2px solid var(--yellow);
+}
+
+input:invalid {
+    border-color: red;
+}
+  
+input:valid {
+    border-color: green;
+}
+
+input:focus{
+    border-color: aqua;
 }
 
 fieldset {
