@@ -190,20 +190,15 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3px;
-    margin: 5px;
     height: max(100px, 320px);
     width: max(800px, 850px); 
 }
 
 .signUp > .contentForm > form > .form > .form-container > .formContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: max(40px, 80px);
     width: max(10px, 850px);
-    padding: 15px;
-    /* border-radius: 25px; */
-    /* background-color: magenta; */
 }
 
 .signUp > .contentForm > form > .form > .form-container > .formContainer > input{
@@ -226,8 +221,11 @@ input:valid {
     border-color: green;
 }
 
-input:focus{
-    border-color: aqua;
+input:focus {
+    color: yellow;
+    background-color: var(--yellowOpacity);
+    border: 2px solid var(--orange);
+
 }
 
 fieldset {
@@ -334,3 +332,10 @@ input:checked + .slider:before {
 }
 
  /*slidebar end-----------------------------------------------*/
+
+ input:focus {
+    color: yellow;
+    background-color: var(--yellowOpacity);
+    border: 2px solid var(--orange);
+
+}
