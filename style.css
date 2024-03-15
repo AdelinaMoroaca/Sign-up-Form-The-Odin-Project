@@ -333,9 +333,13 @@ input:checked + .slider:before {
 
  /*slidebar end-----------------------------------------------*/
 
- input:focus {
+ input :focus {
     color: yellow;
     background-color: var(--yellowOpacity);
     border: 2px solid var(--orange);
 
 }
+
+input[type=text], input[type=email], input[type=number],input[type=password]{
+    padding: 12px 20px;
+} 
