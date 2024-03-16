@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1000px;
+    height: 1000px;
+}
+
+legend{
+    margin: 5px;
+}
+#intro{
+    width: inherit;
+    height: inherit;
+    border: 2px solid red;
+
+}
+
+#first{
+    border: 2px solid gray;
+    width: 950px;
+    height: 200px;
+}
+
+#second{
+    border: 2px solid orange;
+    width: 950px;
+    height: 50px;
+}
+
+#third{
+    border: 2px solid blue;
+    width: 950px;
+    height: 50px;
+}
+
+#fourth{
+    border: 2px solid violet;
+    width: 950px;
+    height: 50px;    
+}
+
+#fifth{
+    border: 2px solid pink;
+    width: 950px;
+    height: 80px;    
+}
+
+#sixth{
+    border: 2px solid yellow;
+    width: 950px;
+    height: 80px;    
+}
+
+#seven{
+    border: 2px solid lime;
+    width: 950px;
+    height: 80px; 
+}
+
+#eight{
+    border: 2px solid magenta;
+    width: 950px;
+    height: 50px; 
+}
+
+#nine{
+    border: 2px solid blueviolet;
+    width: 950px;
+    height: 30px; 
+}
+
+#ten{
+    border: 2px solid palevioletred;
+    width: 950px;
+    height: 50px; 
+}
+
+#eleven{
+    border: 2px solid peru;
+    width: 950px;
+    height: 50px; 
+}
+
+footer{
+    border: 2px solid green;
+}
