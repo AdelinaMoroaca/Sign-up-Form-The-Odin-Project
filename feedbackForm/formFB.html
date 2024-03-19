@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS , JavaScript, React" />
     <meta name="author" content="Adelina Moroaca" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body> 
@@ -29,12 +30,16 @@
         </div>
     </section>
 
-    <section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kqhmj0zcEP8?si=iOrfvGjbmV9nx69d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+    </iframe>
+
+    <section class="coffeeContent">
         <h2>Coffee Types</h2>
-        <ul>
+        <ul class="coffeeContent">
           <li>
             <h2><u><i>Espresso</i></u></h2>
-            <img src="./photo/Espresso.jpg" 
+            <img src="./img/Espresso.jpg" 
             alt="Espresso"
             width="250px" height="200px">
 
@@ -55,7 +60,7 @@
 
           <li>
             <h2><u><i>Latte</i></u></h2>
-            <img src="./photo/latte.webp" 
+            <img src="./img/latte.webp" 
             alt="Latte" 
             width="250px" height="200px">
 
@@ -75,8 +80,8 @@
           </li>
 
           <li>
-            <h2><u><i>Cortado</i></u></h2>
-            <img src="./photo/Cortada.png"
+            <h2><u><i>Cortada</i></u></h2>
+            <img src="./img/Cortada.png"
             alt="Cortado" 
             width="250px" height="200px">
 
@@ -98,87 +103,93 @@
     </section> 
 
 
-    <section>
+    <section class="feedbackForm">
         <!-- Feedback form -->
         <form action="/action_page.php">
-            <br />
             <legend id="intro">Feedback
-
-                <br />
-                <br />
                 <legend id="first">Alegeţi din următoarele opţiuni: *
-        
-                    <br />
-                    <br />
-
-        
-                    <input type="radio" id="personalUseOnly" name="purchaseAim"  value="personalUseOnly" />
-                    <label for="personalUseOnly">Ați cumpărat produsul pentru Dvs. (LAVAZZA Crema e Aroma Espresso boabe 1 kg)</label>
+                    <legend>
+                        <input type="radio" id="personalUseOnly" name="purchaseAim"  value="personalUseOnly" required />
+                        <label for="personalUseOnly">Ați cumpărat produsul pentru Dvs. (LAVAZZA Crema e Aroma Espresso boabe 1 kg)</label>
+                    </legend>
             
+                    <legend>
+                        <input type="radio" id="personalAndPresent" name="purchaseAim"  value="personalAndPresent" required />
+                        <label for="personalAndPresent">Ați cumpărat produsul pentru altcineva, dar îl folosiți şi Dvs, astfel puteți să scrieți o părere despre produs.</label>
+                    </legend>
+          
+                    <legend>
+                        <input type="radio" id="presentPurchaseOnly" name="purchaseAim"  value="presentPurchaseOnly" required />
+                        <label for="presentPurchaseOnly">Ați cumpărat produsul pentru altcineva, astfel nu puteți să scrieți o părere despre produs. (Vă rugăm să ignoraţi întrebările de mai jos şi să accesaţi butonul "Trimite" din josul paginii)</label>
+                    </legend>
 
-                    <br />
-                    <br />
-
-      
-                    <input type="radio" id="personalAndPresent" name="purchaseAim"  value="personalAndPresent" />
-                    <label for="personalAndPresent">Ați cumpărat produsul pentru altcineva, dar îl folosiți şi Dvs, astfel puteți să scrieți o părere despre produs.</label>
-         
-                        
-                    <br />
-                    <br />
-
-                    <input type="radio" id="presentPurchaseOnly" name="purchaseAim"  value="presentPurchaseOnly" />
-                    <label for="presentPurchaseOnly">Ați cumpărat produsul pentru altcineva, astfel nu puteți să scrieți o părere despre produs. (Vă rugăm să ignoraţi întrebările de mai jos şi să accesaţi butonul "Trimite" din josul paginii)</label>
-
-                    <br />
-                    <br />
-
-            
-                    <input type="radio" id="noPurchase" name="purchaseAim"  value="noPurchase"/>
-                    <label for="noPurchase"> Nu s-a efectuat cumpărarea. (Vă rugăm să ignoraţi întrebările de mai jos şi să accesaţi butonul "Trimite" din josul paginii)</label>
-                
+                    <legend>
+                        <input type="radio" id="noPurchase" name="purchaseAim"  value="noPurchase" required />
+                        <label for="noPurchase"> Nu s-a efectuat cumpărarea. (Vă rugăm să ignoraţi întrebările de mai jos şi să accesaţi butonul "Trimite" din josul paginii)</label>
+                    </legend>
                 </legend> 
 
                 <legend id="second">
-                    <label for="purchase">Sunmar:*</label>
-                    <input type="text" id="purchase" name="purchase"  value="" placeholder="De ce ati cumparat acest produs? Care au fost caracteristicile care v-au determinat sa achizitionati acest produs?" />
-
+                    <legend id="secondPurchase">
+                        <label for="purchase">Sumar:*</label>
+                        <input type="text" id="purchase" name="purchase"  value="" placeholder="De ce ati cumparat acest produs? Care au fost caracteristicile care v-au determinat sa achizitionati acest produs?" required />
+    
+                    </legend>
+    
+                    <legend id="secondPros">
+                        <label for="pros">Avantaje: </label>
+                        <input type="text" id="pros" name="pros"  value="" placeholder="Care sunt motivele pentru care ati recomanda acest produs? Care sunt cele mai apreciate caracteristici, functii ale produsului? De ce sa se aleaga acest produs?"/>
+    
+                    </legend>
+    
+                    <legend id="secondCons">
+                        <label for="cons">Dezavantaje: </label>
+                        <input type="text" id="cons" name="cons"  value="" placeholder="In ce ar putea excela produsul respectiv? Care sunt functiile care ii lipsesc?"/>
+    
+                    </legend>
                 </legend>
 
-                <legend id="third">
-                    <label for="pros">Avantaje: </label>
-                    <input type="text" id="pros" name="pros"  value="" placeholder="Care sunt motivele pentru care ati recomanda acest produs? Care sunt cele mai apreciate caracteristici, functii ale produsului? De ce sa se aleaga acest produs?"/>
 
+                <legend id="third">
+                    <label for="evaluatePrice">Evaluaţi produsul după preţ/valoare: *</label>
+                    <input type="hidden" name="evaluatePrice" id="evaluatePrice" />
+                    <legend class="star">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </legend>
+                    <legend>(1 - prost, 5 - bun)</legend>
                 </legend>
 
                 <legend id="fourth">
-                    <label for="cons">Dezavantaje: </label>
-                    <input type="text" id="cons" name="cons"  value="" placeholder="In ce ar putea excela produsul respectiv? Care sunt functiile care ii lipsesc?"/>
-
-                </legend>
-
-                <legend id="fifth">
-                    <label for="evaluatePrice">Evaluaţi produsul după preţ/valoare: *</label>
+                    <label for="evaluatePrice">În ce măsură a îndeplinit pretenţiile Dvs. produsul? *</label>
                     <input type="hidden" name="evaluatePrice" id="evaluatePrice" />
-                    <legend>4 STELUTE</legend>
-                    <legend>(1 - prost, 4 - bun)</legend>
+                   <legend>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                   </legend>
+                    <legend>(1 - deloc, 5 - integral)</legend>
+                </legend>       
+              
+                <legend id="fifth">
+                    <label for="evaluateNecessity">În ce măsură a îndeplinit pretenţiile Dvs. produsul? *</label>
+                    <input type="hidden" name="evaluateNecessity" id="evaluateNecessity" />
+                    <legend>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                   </legend>
+                    <legend>(1 - deloc, 5 - integral)</legend>
                 </legend>
 
                 <legend id="sixth">
-                    <label for="evaluatePrice">În ce măsură a îndeplinit pretenţiile Dvs. produsul? *</label>
-                    <input type="hidden" name="evaluatePrice" id="evaluatePrice" />
-                    <legend>4 STELUTE</legend>
-                    <legend>(1 - deloc, 4 - integral)</legend>
-                </legend>       
-              
-                <legend id="seven">
-                    <label for="evaluateNecessity">În ce măsură a îndeplinit pretenţiile Dvs. produsul? *</label>
-                    <input type="hidden" name="evaluateNecessity" id="evaluateNecessity" />
-                    <legend>4 STELUTE</legend>
-                    <legend>(1 - deloc, 4 - integral)</legend>
-                </legend>
-
-                <legend id="eight">
                     <label for="recomandation">Aţi recomanda produsul şi pentru alţii? *</label> <br/>
                     <!-- <input type="hidden" name="recomandation" id="recomandation" /> -->
                     <input type="button" name="recomandation" id="recomandationYes" value="Da">
@@ -186,13 +197,13 @@
                 </legend>
 
                    
-                <legend id="nine">
+                <legend id="seventh">
                     <!-- Email -->
                     <label for="email">Email :</label>
                     <input type="text" name="email" id="email" required />
                 </legend>
 
-                <legend id="ten">
+                <legend id="eighth">
                     <!-- Password -->
                     <label for="nickname">Nickname: (Dacă vă introduceți nickname-ul, acesta va apărea lângă părerea scrisă, va rugam sa nu oferiti date personale.)</label><br />
                     <input type="text" name="nickname" id="nickname" />
@@ -200,15 +211,15 @@
             
 
     
-                <legend id="eleven">
+                <legend id="ninth">
                     <!-- Terms and Conditions -->
                     <input type="checkbox" name="terms" id="terms">
                     <label for="terms">Sunteți de acord să identifice magazinul Coffee Time.ro - Coffee Shop Online părerea Dvs, după adresa de e-mail introdusă în cursul cumpărării.</label>
                 </legend>
            
+                <input type="submit" value="Transmiterea Chestionarului" />
                 
             </legend>
-            <input type="submit" value="Transmiterea Chestionarului" />
         </form>
     </section>
 

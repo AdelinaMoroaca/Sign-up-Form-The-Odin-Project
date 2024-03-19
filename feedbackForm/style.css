@@ -4,87 +4,168 @@
     box-sizing: border-box;
 }
 
+:root{
+    --gray: rgb(150, 150, 150);
+    --grayLight: rgb(211, 187, 187);
+    --grayDark: rgb(94, 93, 93);
+    --intenseYellow: rgb(255, 238, 0);
+    --lightYellow:rgb(255, 253, 231);
+
+
+}
+
 body{
-    width: 1000px;
-    height: 1000px;
+    width: 1900px;
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.coffeeContent{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.coffeeContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid red;
+    margin:20px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--gray);
+    border: 2px solid var(--grayDark);
+    border-radius: 2%;
+    height: 1100px;
+    /* width: 970px; */
 }
 
 legend{
     margin: 5px;
 }
+
 #intro{
     width: inherit;
     height: inherit;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 
 #first{
-    border: 2px solid gray;
+    border: 1px solid var(--grayDark);
+    background-color: var(--grayLight);
     width: 950px;
-    height: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+
 }
 
-#second{
-    border: 2px solid orange;
+#second {
+    display: flex;
     width: 950px;
-    height: 50px;
+    height: 300px;
+    /* border: 1px solid var(--grayDark); */
+    /* background-color: var(--grayLight); */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
-#third{
-    border: 2px solid blue;
+#secondPurchase, #secondPros, #secondCons {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--grayDark);
+    background-color: var(--grayLight);
     width: 950px;
-    height: 50px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
-#fourth{
-    border: 2px solid violet;
-    width: 950px;
-    height: 50px;    
+#purchase, #pros, #cons {
+    height: 220px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--grayDark);
+    /* margin: 10px; */
 }
 
-#fifth{
-    border: 2px solid pink;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    white-space:pre-line;  
+    position:relative;
+    top:-80px;
+    padding: 20px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    white-space:pre-line;  
+    position:relative;
+    top:-80px;
+    padding: 20px;
+}
+
+#third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth{
+    border: 1px solid var(--grayDark);
+    background-color: var(--grayLight);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
     width: 950px;
-    height: 80px;    
+    height: 80px;   
+}
+
+.fa {
+    color: var(--lightYellow);   
+}
+  
+.fa:hover {
+    color: var(--intenseYellow);
+
 }
 
 #sixth{
-    border: 2px solid yellow;
-    width: 950px;
-    height: 80px;    
+    height: 60px;    
 }
 
-#seven{
-    border: 2px solid lime;
-    width: 950px;
-    height: 80px; 
-}
-
-#eight{
-    border: 2px solid magenta;
-    width: 950px;
+#seventh{
     height: 50px; 
 }
 
-#nine{
-    border: 2px solid blueviolet;
-    width: 950px;
-    height: 30px; 
+#eighth{
+    height: 60px; 
+
 }
 
-#ten{
-    border: 2px solid palevioletred;
-    width: 950px;
-    height: 50px; 
+#ninth{
+    height: 60px; 
 }
 
-#eleven{
-    border: 2px solid peru;
-    width: 950px;
-    height: 50px; 
+input[type='submit']{
+    position: absolute;
+    top: 1770px;
+    left: 825px;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid var(--grayDark);
 }
 
 footer{
     border: 2px solid green;
+    margin-top: 100px;
 }
