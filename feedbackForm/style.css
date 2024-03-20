@@ -10,35 +10,217 @@
     --grayDark: rgb(94, 93, 93);
     --intenseYellow: rgb(255, 238, 0);
     --lightYellow:rgb(255, 253, 231);
-
+    box-sizing: border-box;
 
 }
 
 body{
-    width: 1900px;
-    /* height: 1000px; */
     display: flex;
     flex-direction: column;
+    /* border: 1px solid blue; */
+    width: 1920px;
+    height: 100%;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-size: 100%;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+
+/* HEADER */
+header {
+    height: 225px;
+    width: inherit;
+    position: sticky;
+    top: 0;
+    /* border: 1px solid magenta; */
+}
+
+header div{
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+/* PROMOTIONS SECTIONS */
+
+header > div.promotions{
+    height: 25px;
+    animation-name: bannerPromo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bannerPromo {
+    10%   {background-color: peachpuff;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    50%  {background-color: orange;}
+    100% {background-color: orangered;}   
+}
+
+/* SEARCH BAR AND ACCOUNT SECTION */
+
+header > div.searchAndAccount {
+    background-color: aliceblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.searchAndAccount div{
+    font-size: 1.3rem;
+    margin: 3px;
+    height: 75px;
+ 
+}
+
+.searchAndAccount i{
+    border:1px solid blue;
+    font-size: 40px;
+    margin: 5px;
+  
+}
+
+/* *LOGO* */
+.searchAndAccount > .logo {
+    width: 410px;
+    letter-spacing: 10px;
+    color: rgb(109, 21, 21);
+    padding: 15px;
+    border:1px solid transparent;
+
+
+    /* font-size: 40px;  ---------------NOT WORKING */
+}
+
+.searchContainer{
+    width: 750px;
+}
+
+/* * SEARCH BAR  * */
+
+.searchContainer > form {
+    width: 750px;
+    height: inherit;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+
 
 }
 
-section.coffeeContent{
+.searchContainer > form > input[type='text']{
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 545px;
+    height: 70px;
+    background-color: transparent;
+    width: 740px;
+}
+
+.searchContainer > form > input[type='text']::placeholder{
+    position: absolute;
+    padding-left: 80px;
+    top: 20px;
+    font-size: 30px;
+
+    /* top: 90px; */
+
+}
+
+.searchContainer > form > button[type='submit'] > i.fa-search {
+    border: none;
+    position: absolute;
+    top: 57px;
+    left: 560px;
+    font-size: 45px;
+}
+
+.searchContainer > form > span.deleteInputInfo{
+    border: 1px solid magenta;
+    position: absolute;
+
+    /* width: 350px; */
+}
+
+
+/* STORES SECTION */
+
+.stores{
+    width: 230px;
+    padding: 5px;
+    border: 1px solid aqua;
+
+  
+}
+
+/* USER ACCOUNT */
+
+.userAccount{
+    width: 150px;
+    padding: 5px;
+    border: 1px solid aqua;
+
+}
+
+.favouriteProducts{
+    width: 50px;  
+    border: 1px solid aqua;
+
+}
+
+.shoppingCart{
+    width: 50px;
+    border: 1px solid aqua;
+
+}
+
+/* NAV BAR SECTION */
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+    padding: 10px;
+    height: 100px;
+    background-color: aqua;
+    list-style-type: none;
+
+}
+
+header > nav > ul > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 1px solid blue;
+    background-color: black;
+    color: wheat;
+
+}
+
+/* section.coffeeContent{
     display: flex;
     flex-direction: column;
-}
+} */
 
-ul.coffeeContent{
+/* ul.coffeeContent{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border: 2px solid red;
     margin:20px;
     padding: 20px;
-}
+} */
 
-form{
+/* form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,21 +229,19 @@ form{
     border: 2px solid var(--grayDark);
     border-radius: 2%;
     height: 1100px;
-    /* width: 970px; */
-}
+} */
 
-legend{
+/* legend{
     margin: 5px;
-}
+} */
 
-#intro{
+/* #intro{
     width: inherit;
     height: inherit;
-    /* border: 2px solid red; */
 
-}
+} */
 
-#first{
+/* #first{
     border: 1px solid var(--grayDark);
     background-color: var(--grayLight);
     width: 950px;
@@ -72,20 +252,18 @@ legend{
     margin: 10px;
     border-radius: 20px;
 
-}
+} */
 
-#second {
+/* #second {
     display: flex;
     width: 950px;
     height: 300px;
-    /* border: 1px solid var(--grayDark); */
-    /* background-color: var(--grayLight); */
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
-}
+} */
 
-#secondPurchase, #secondPros, #secondCons {
+/* #secondPurchase, #secondPros, #secondCons {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--grayDark);
@@ -95,31 +273,33 @@ legend{
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
-}
+} */
 
-#purchase, #pros, #cons {
+/* #purchase, #pros, #cons {
     height: 220px;
     padding: 5px;
     border-radius: 20px;
     border: 1px solid var(--grayDark);
-    /* margin: 10px; */
-}
+   
+} */
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ /* Chrome/Opera/Safari */
+/* ::-webkit-input-placeholder { 
     white-space:pre-line;  
     position:relative;
     top:-80px;
     padding: 20px;
-}
+} */
 
-::-moz-placeholder { /* Firefox 19+ */
+ /* Firefox 19+ */
+/* ::-moz-placeholder { 
     white-space:pre-line;  
     position:relative;
     top:-80px;
     padding: 20px;
-}
+} */
 
-#third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth{
+/* #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth{
     border: 1px solid var(--grayDark);
     background-color: var(--grayLight);
     border-radius: 20px;
@@ -127,35 +307,35 @@ legend{
     margin: 10px;
     width: 950px;
     height: 80px;   
-}
+} */
 
-.fa {
+/* .fa {
     color: var(--lightYellow);   
-}
+} */
   
-.fa:hover {
+/* .fa:hover {
     color: var(--intenseYellow);
 
-}
+} */
 
-#sixth{
+/* #sixth{
     height: 60px;    
-}
+} */
 
-#seventh{
+/* #seventh{
     height: 50px; 
-}
+} */
 
-#eighth{
+/* #eighth{
     height: 60px; 
 
-}
+} */
 
-#ninth{
+/* #ninth{
     height: 60px; 
-}
+} */
 
-input[type='submit']{
+/* input[type='submit']{
     position: absolute;
     top: 1770px;
     left: 825px;
@@ -163,9 +343,9 @@ input[type='submit']{
     width: 250px;
     border-radius: 20px;
     border: 2px solid var(--grayDark);
-}
+} */
 
-footer{
+/* footer{
     border: 2px solid green;
     margin-top: 100px;
-}
+} */

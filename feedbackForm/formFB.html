@@ -5,19 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Time</title>
     <meta name="description" content="Comandă acum cafeaua perfectă pentru tine și savureaz-o în fiecare dimineață. Suntem alături de tine pentru a descoperi cafeaua care ți se potrivește! Produse Originale. Reduceri 50% Livrare Gratis la +150Ron. Modele: Decalcifiant, Aparate Cafea, Pentru Uz Casnic." />
-    <meta name="keywords" content="HTML, CSS , JavaScript, React" />
+    <meta name="keywords" content="HTML, CSS , JavaScript, React, coffee, coffee beans" />
     <meta name="author" content="Adelina Moroaca" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body> 
     <header>
-        <h1><i><u>Coffee Time</u></i></h1>
-        <p>Hello there and thanks for visiting 'Coffee Time'.</p> 
+        <div class="promotions">
+            <p>
+                Banda promotii/ livrare gratuita/ Cafea X Cadou la achizitii de min 750 lei din APP folosind codul COFFEE TIME
+            </p>
+        </div>
+        
+        <div class="searchAndAccount">
+            <div class="logo">
+                <h1>COFFEE  T!ME </h1>
+            </div>
+
+            <div class="searchContainer">
+                <form action="/action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search your product... " name="search" />
+                    <!-- <span class="deleteInputInfo">Delete</span> -->
+                </form>
+            </div>
+            
+            <div class="stores">
+                <h2><i class="fa fa-map-marker"></i>Stores</h2>
+            </div>
+
+            <div class="userAccount">
+                <h2><i class="fa fa-user-o"></i>Log in</h2>
+            </div>
+
+            <div class="favouriteProducts">
+                <i class="fa fa-heart-o"></i>
+            </div>
+
+            <div class="shoppingCart">
+                <i class="fa fa-cart-plus"></i>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
+    <!-- <section>
         <h2>TOP Coffees</h2>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Consectetur adipiscing elit ut aliquam purus sit. Congue mauris rhoncus aenean vel elit. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. A diam sollicitudin tempor id eu nisl nunc mi. Gravida neque convallis a cras semper auctor neque vitae tempus. Volutpat est velit egestas dui id ornare arcu. Aliquet eget sit amet tellus cras adipiscing enim.</p>
@@ -28,13 +75,13 @@
                 <li><a href="https://www.allrecipes.com/recipe/72612/sangria-sangria/">Americano Coffee</a></li>
             </ol>
         </div>
-    </section>
+    </section> -->
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kqhmj0zcEP8?si=iOrfvGjbmV9nx69d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Kqhmj0zcEP8?si=iOrfvGjbmV9nx69d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> --> -->
 
-    </iframe>
+    <!-- </iframe> -->
 
-    <section class="coffeeContent">
+    <!-- <section class="coffeeContent">
         <h2>Coffee Types</h2>
         <ul class="coffeeContent">
           <li>
@@ -100,11 +147,10 @@
             
           </li>
         </ul>
-    </section> 
+    </section>  -->
 
 
-    <section class="feedbackForm">
-        <!-- Feedback form -->
+    <section class="feedbackForm" id="feedback">
         <form action="/action_page.php">
             <legend id="intro">Feedback
                 <legend id="first">Alegeţi din următoarele opţiuni: *
@@ -198,13 +244,11 @@
 
                    
                 <legend id="seventh">
-                    <!-- Email -->
                     <label for="email">Email :</label>
                     <input type="text" name="email" id="email" required />
                 </legend>
 
                 <legend id="eighth">
-                    <!-- Password -->
                     <label for="nickname">Nickname: (Dacă vă introduceți nickname-ul, acesta va apărea lângă părerea scrisă, va rugam sa nu oferiti date personale.)</label><br />
                     <input type="text" name="nickname" id="nickname" />
                 </legend>
@@ -212,7 +256,6 @@
 
     
                 <legend id="ninth">
-                    <!-- Terms and Conditions -->
                     <input type="checkbox" name="terms" id="terms">
                     <label for="terms">Sunteți de acord să identifice magazinul Coffee Time.ro - Coffee Shop Online părerea Dvs, după adresa de e-mail introdusă în cursul cumpărării.</label>
                 </legend>
@@ -221,6 +264,12 @@
                 
             </legend>
         </form>
+    </section>
+
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ipsum veritatis, totam voluptates ipsam quod exercitationem sint. Ab fuga rem nisi doloremque pariatur. Voluptate id officiis natus optio velit distinctio quo quidem! Nulla distinctio in molestias officia iste omnis voluptatem obcaecati, dolores consectetur laborum minus neque at vel accusantium atque. Distinctio recusandae eos quaerat eaque, non ea in nesciunt unde sunt tenetur eius sit molestias ipsa, et quod expedita assumenda quam suscipit incidunt excepturi deleniti qui autem ipsam esse. Non, eligendi quos iure consequuntur quas laborum eaque nobis quisquam atque itaque architecto perspiciatis assumenda. Dicta quibusdam rerum tenetur numquam. Ipsa adipisci tempora laboriosam recusandae ea tempore repellat delectus animi repellendus qui placeat amet possimus facere odit quasi suscipit consequatur nobis dignissimos, rem sit sequi incidunt! Fuga ratione vitae cum cupiditate at nam a aliquid maxime, delectus aspernatur, repellat iure, voluptatibus adipisci commodi dolore eaque dicta. Quae quibusdam nemo culpa corrupti nostrum alias ea dicta assumenda fuga exercitationem itaque, tempora sunt, excepturi natus mollitia id rerum, repellat facere! Culpa dolorum sapiente id, iure atque temporibus blanditiis adipisci eligendi, quam possimus fugit. Hic nisi ab aut sint unde magnam ducimus optio adipisci eveniet tempora cum, rerum sapiente. Nam qui atque possimus reiciendis!</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium temporibus numquam in non magnam quidem nostrum, nisi esse quasi praesentium itaque necessitatibus reiciendis pariatur neque exercitationem magni veritatis a, perspiciatis nemo! Perspiciatis accusantium amet optio necessitatibus, aperiam tempora accusamus tempore temporibus placeat fugiat sit voluptatum dolor, maiores odio. Aperiam dolor, non quos illum quam possimus eligendi quibusdam facere, placeat nihil repellendus expedita eveniet id fugiat corrupti sequi quae odio, velit sapiente temporibus assumenda harum praesentium. Debitis, laudantium! Molestias odio natus quia dignissimos magnam voluptates eius quae officiis repellendus dolorem fuga consectetur praesentium dolorum culpa, libero perspiciatis, repellat accusamus? Consequuntur quae delectus aperiam. Blanditiis eius nam a laboriosam hic nisi officiis corporis adipisci. Omnis eos aliquam impedit corrupti consectetur minima harum temporibus dolorum illo? Modi natus facere obcaecati aspernatur debitis. Aspernatur quasi maiores laboriosam consequuntur cupiditate doloribus quas animi qui sed sunt? Facere ea delectus quis, quam minima culpa exercitationem voluptate accusantium fugiat eius in ipsum suscipit ullam voluptatum id voluptates? Quo quasi sed id illum fuga doloribus, temporibus provident sapiente, quidem sunt commodi. Perspiciatis aliquam et dolore, delectus quia quaerat debitis mollitia architecto itaque animi at hic distinctio corporis soluta molestias facere numquam atque aspernatur quae recusandae porro repellendus iste voluptatem a. Architecto non similique illum ipsum nisi accusantium provident, molestias, laudantium voluptate, quaerat doloribus illo? Expedita sit consequuntur quod necessitatibus molestias reprehenderit quisquam debitis, maxime id voluptatem odit, suscipit natus, deleniti aperiam accusantium. Officia, fugit tenetur laudantium natus, pariatur blanditiis cum expedita sit consequuntur, obcaecati maiores aut praesentium temporibus deserunt. Hic sit minus ipsum praesentium eligendi sed in quia quae dignissimos esse animi sapiente officiis maxime quo, voluptate nesciunt unde magni adipisci, totam accusamus aspernatur molestiae tenetur soluta. Repellendus excepturi, similique commodi, blanditiis est autem illum fugiat itaque maiores aspernatur natus deleniti ex! Voluptatem asperiores esse harum numquam quasi tempore dolores officia sit repellat eveniet vitae, vel perspiciatis illum minus doloribus, commodi inventore possimus, voluptates accusantium similique id est? Qui harum omnis laboriosam iure, debitis ex aliquid deserunt. Corrupti iure asperiores accusantium dolores voluptatum iusto itaque eligendi porro quis aliquid quasi minima maxime omnis hic cupiditate incidunt, commodi tempora tempore, ducimus molestias illum eaque amet, aspernatur dolor? Voluptates in exercitationem enim, est quibusdam ab quidem earum vitae sunt id iure natus aliquid voluptatum velit quisquam architecto quod deserunt cum modi facilis. Dolores veniam nam commodi aperiam assumenda nesciunt ipsam sunt, veritatis illum, voluptas totam autem dicta voluptatem maiores ducimus qui ratione dolorem deserunt velit. Unde repudiandae ut ab excepturi consequatur doloribus veritatis quod mollitia tempore sit pariatur ipsam, aliquid, fuga possimus asperiores ratione natus at deleniti iure, corporis laudantium quae? Eveniet rem vel ad commodi. Quod inventore quam quidem, ab, repellendus ex similique quos nemo fuga in quasi, laudantium adipisci enim. Placeat blanditiis temporibus assumenda iure unde, deleniti, ex consequatur cum dolores consequuntur atque voluptas vel non voluptates in ipsa! Aliquid, beatae. Nisi neque culpa voluptatibus facilis, provident deserunt, exercitationem vitae facere voluptatum dolore laudantium, natus iure. Accusamus et expedita tenetur laborum corporis in facere, nihil cumque quod!</p>
     </section>
 
    
