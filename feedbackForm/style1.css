@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray: rgb(150, 150, 150);
+    --grayLight: rgb(211, 187, 187);
+    --grayDark: rgb(94, 93, 93);
+    --intenseYellow: rgb(255, 238, 0);
+    --lightYellow:rgb(255, 253, 231);
+    /* box-sizing: border-box; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family: "Madimi One", sans-serif;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header{
+    height: 225px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: blue;
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+header div{
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    gap: 10px;
+    /* font-size: 1.2em; */
+}
+
+header > nav{
+    height: 40%;
+    background-color: blueviolet;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+   
+}
+
+/* PROMOTIONS SECTIONS */
+header > div.promotions{
+    height: 12%;
+    animation-name: bannerPromo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bannerPromo {
+    10%   {background-color: peachpuff;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    50%  {background-color: orange;}
+    100% {background-color: orangered;}   
+}
+
+/* SEARCH BAR AND ACCOUNT SECTION */
+
+header > div.searchAndAccount {
+    background-color: rgb(40, 182, 40);
+    height: calc(225px - 12% - 40%);
+    padding: 60px;
+}
+
+header > .searchAndAccount div{
+    /* font-size: 1.3rem; */
+}
+
+header >  .searchAndAccount i{
+    border:1px solid blue;
+    margin: 4px;
+
+    /* font-size: 40px; */
+}
+
+/* *LOGO* */
+.searchAndAccount > .logo {
+    /* width: 410px; */
+    /* letter-spacing: 10px; */
+    background-color: rgb(155, 253, 253);
+    /* color: rgb(109, 21, 21); */
+    /* padding: 15px; */
+    /* border:1px solid transparent; */
+
+
+    /* font-size: 40px;  ---------------NOT WORKING */
+}
+
+.searchAndAccount > .logo > h1{
+    /* width: 460px; */
+    /* font-size: 40px; */
+    border: 1px solid red;
+    background-color: white;
+    color: rgb(109, 21, 21);
+    /* letter-spacing: 12px; */
+
+
+}
+
+.searchContainer{
+    /* width: 750px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    /* METODA 1 */
+    /* height: calc(100vh - 60px - 60px); */
+
+    /* METODA 2 */
+    flex-grow: 1;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* article {
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+    margin: 15px;
+    width: 45%;
+
+} */
+
+footer{
+    height: 60px;
+    background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+
+}
+
+/* TABLET LAYOUT */
+/* @media screen and (min-width: 600px){
+    article{
+        width: 100%;
+    }
+} */
+
+/* SMALL LATOP LAYOUT */
+/* @media screen and (min-width: 900px){
+    article{
+        width: 100%;
+    }
+} */
+
+/* TABLET LAYOUT */
+/* @media screen and (max-width: 600px){
+    article{
+        width: 100%;
+    }
+} */
+
+/* SMALL LATOP LAYOUT */
+/* @media screen and (max-width: 900px){
+    article{
+        width: 100%;
+    }
+} */

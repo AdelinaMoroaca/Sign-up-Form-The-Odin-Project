@@ -17,21 +17,21 @@
 body{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
-    width: 1920px;
-    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid blue;
+  
+
+
     background-color: antiquewhite;
-    box-sizing: border-box;
     font-family: "Madimi One", sans-serif;
-    font-size: 100%;
-    /* font-weight: 400; */
-    /* font-style: normal; */
+    
 }
 
 /* HEADER */
 header {
     height: 225px;
-    width: inherit;
+    width: 100%;
     position: sticky;
     top: 0;
     /* border: 1px solid magenta; */
@@ -39,6 +39,7 @@ header {
 
 header div{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 2px;
@@ -70,12 +71,15 @@ header > div.searchAndAccount {
     display: flex;
     justify-content: center;
     padding: 60px;
+    /* border:1px solid red; */
 }
 
 .searchAndAccount div{
     font-size: 1.3rem;
     margin: 3px;
     height: 75px;
+    /* border:1px solid red; */
+
  
 }
 
@@ -89,13 +93,24 @@ header > div.searchAndAccount {
 /* *LOGO* */
 .searchAndAccount > .logo {
     width: 410px;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
+    background-color: rgb(155, 253, 253);
     color: rgb(109, 21, 21);
     padding: 15px;
-    border:1px solid transparent;
+    /* border:1px solid transparent; */
 
 
     /* font-size: 40px;  ---------------NOT WORKING */
+}
+
+.searchAndAccount > .logo > h1{
+    /* width: 460px; */
+    font-size: 40px;
+    border: 1px solid red;
+    color: rgb(109, 21, 21);
+    letter-spacing: 12px;
+
+
 }
 
 .searchContainer{
@@ -105,7 +120,7 @@ header > div.searchAndAccount {
 /* * SEARCH BAR  * */
 
 .searchContainer > form {
-    width: 750px;
+    width: 100%;
     height: inherit;
     border: 1px solid black;
     border-radius: 40px;
@@ -119,15 +134,19 @@ header > div.searchAndAccount {
     border: none;
     position: absolute;
     top: 50px;
-    left: 545px;
+    left: 660px;
     height: 70px;
     background-color: transparent;
-    width: 740px;
+    width: 35%;
+}
+
+.searchContainer > form > input[type='text']:focus{
+    outline: none;
 }
 
 .searchContainer > form > input[type='text']::placeholder{
     position: absolute;
-    padding-left: 80px;
+    padding-left: 10px;
     top: 20px;
     font-size: 30px;
 
@@ -139,14 +158,18 @@ header > div.searchAndAccount {
     border: none;
     position: absolute;
     top: 57px;
-    left: 560px;
+    left: 610px;
     font-size: 45px;
+
 }
 
 .searchContainer > form > span.deleteInputInfo{
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     position: absolute;
-
+    padding-right: 10px;
+    top: 65px;
+    left: 1220px;
+    font-size: 30px;
     /* width: 350px; */
 }
 
@@ -154,7 +177,7 @@ header > div.searchAndAccount {
 /* STORES SECTION */
 
 .stores{
-    width: 230px;
+    width: 140px;
     padding: 5px;
     border: 1px solid aqua;
 
@@ -206,6 +229,9 @@ header > nav > ul > li > a{
 
 }
 
+.textDemo{
+    width: 500px;
+}
 /* section.coffeeContent{
     display: flex;
     flex-direction: column;
